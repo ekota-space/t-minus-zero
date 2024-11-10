@@ -1,0 +1,15 @@
+{
+  "name": "t-minus-zero",
+  "scripts": {
+    "start": "supabase start",
+    "stop": "supabase stop",
+    "diff": "supabase db diff --local --schema public,storage",
+    "create-migration": "supabase db diff --local --schema public,storage -f ",
+    "reset-db": "supabase db reset --local",
+    "migrate": "supabase migration up --local",
+    "generate": "supabase gen types typescript --local"
+  },
+  "devDependencies": {
+    "supabase": "^1.219.2"
+  }
+}
