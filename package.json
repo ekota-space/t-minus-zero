@@ -4,10 +4,10 @@
     "start": "supabase start",
     "stop": "supabase stop",
     "diff": "supabase db diff --local --schema public,storage",
-    "create-migration": "supabase db diff --local --schema public,storage -f ",
+    "create-migration": "supabase db diff --local --schema public,storage -f",
     "reset-db": "supabase db reset --local",
     "migrate": "supabase migration up --local",
-    "generate": "supabase gen types typescript --local"
+    "generate": "supabase gen types typescript --local > ../ekota/src/collection/types.ts"
   },
   "devDependencies": {
     "supabase": "^1.219.2"
